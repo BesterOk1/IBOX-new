@@ -1,0 +1,130 @@
+/* Основные стили */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+  }
+  
+  /* Страница входа */
+  .login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Дашборд */
+  .dashboard {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  nav {
+    width: 250px;
+    background: #2c3e50;
+    padding: 20px;
+    color: white;
+  }
+  
+  nav a {
+    display: block;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #34495e;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 30px;
+  }
+  
+  /* Карточки курсов */
+  .courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .course-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  /* Прогресс */
+  .progress-circle {
+    width: 200px;
+    margin: 30px auto;
+  }
+  
+  /* Админ-панель */
+  .admin-stats {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .stat-item {
+    text-align: center;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+  }
+  
+  .course-form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input[type="text"],
+  .form-group textarea,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .submit-btn {
+    background: #27ae60;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
